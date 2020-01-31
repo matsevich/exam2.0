@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Gotham Medium', sans-serif;
+  src: url(../fonts/gotham-medium-webfont.woff2); }
+
+@font-face {
+  font-family: 'Gotham Regular', sans-serif;
+  src: url(../fonts/gotham_medium_regular-webfont.woff2); }
+
+@font-face {
+  font-family: 'Gotham Bold', sans-serif;
+  src: url(../fonts/gothambold1.woff); }
+
+@font-face {
+  font-family: 'Gotham Book', sans-serif;
+  src: url(../fonts/GothamBook.woff); }
+
+.div {
+  font-family: 'Gotham Medium', sans-serif;
+  font-size: 25px; }
