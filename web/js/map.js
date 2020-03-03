@@ -1,16 +1,16 @@
 function initMap () {
   let element = document.getElementById('map');
   let options = {
-    zoom: 14,
+    zoom: 13,
     disableDefaultUI: true,
-    center: {lat: 48.915532, lng: 24.700995}
+    center: {lat: 40.658424, lng: -73.875313}
   };
   let myMap = new google.maps.Map(element, options);
   let markers = [
   {
-    coordinates: {lat: 48.924214, lng: 24.721262},
+    coordinates: {lat: 40.679219, lng: -73.899128},
     image: 'web/img/map-marker.png',
-    info: '<h3>Beetroot Base</h3>'
+    info: '<h3>Monticello International Groop</h3><br><p>91 Nolan Extensions Suite 670</p>'
   }
   ];
   for(let i = 0; i < markers.length; i++ ) {

@@ -34,8 +34,10 @@
 /* start styling */
   
 #map
-  height: 700px 
+  height: 100vh 
   width: 100%
+#nav-icon2
+  display: none
 
 
 .conteiner
@@ -65,7 +67,7 @@
       justify-content: space-between
       align-items: center
       position: absolute
-      top: 0
+      top: 20px
       left: 50%
       margin-left: -430px
       z-index: 1010
@@ -75,7 +77,10 @@
         .nav-list
           display: flex
           justify-content: space-between
-          list-style-type: none 
+          list-style-type: none
+          a 
+            text-decoration: none
+            color: #fff 
           .nav-item
             margin: 20px 
             color: #ffffff
@@ -90,15 +95,26 @@
               font-size: 9px              
               margin: 7px
               line-height: 9px 
-            &:hover > i
+            &:hover  i
               background: #ffffff
               border-radius: 50%
       .header-socials
         display: flex
         margin-left: 30px
         .social-icon
-          padding: 34px 11px
           color: #ffffff
+          margin-left: 20px 
+          border: 1px solid #ffffff 
+          border-radius: 50%  
+          height: 40px
+          width: 40px
+          display: flex
+          justify-content: center
+          align-items: center
+          &:hover
+            color: #55b6fe
+            border: 1px solid #55b6fe
+            cursor: pointer
 .header-slider
   .slide-one, .slide-two, .slide-three, .slide-four, .slide-five
     display: flex
@@ -128,11 +144,11 @@
     background-size: cover
     background-position: center
   .slide-two
-    background: url(../img/bg-top.png)
+    background: url(../img/bg-top-first.png)
     background-size: cover
     background-position: center
   .slide-three
-    background: url(../img/bg-top.png)
+    background: url(../img/bg-top-first.png)
     background-size: cover
     background-position: center
   .slide-four
@@ -156,7 +172,7 @@
   opacity: 0.7
   text-align: center
   cursor: pointer
-  i
+  a
     color: #ffffff
     border: 1px solid #ffffff
     border-radius: 50%
@@ -183,12 +199,12 @@
     align-items:  center
     margin-bottom: 140px
     .left-side
-      position: relative
       width: 850px
       height: 540px 
     .right-side
       color: #2c4058
       max-width: 470px
+      margin-left: 20px
       &__suptitle
         @include gotham-book
         font-size: 22px
@@ -214,6 +230,8 @@
         line-height: 22px
         text-transform: uppercase
         font-size: 14px
+        cursor: pointer
+        outline: none
   &__conteiner2
     display: flex
     flex-direction: row 
@@ -221,7 +239,6 @@
     align-items:  center
     margin-bottom: 140px
     .pic-side
-      position: relative
       width: 850px
       height: 540px 
     .commerce-centre
@@ -253,6 +270,8 @@
         line-height: 22px
         text-transform: uppercase
         font-size: 14px
+        cursor: pointer
+        outline: none
   
 /* latest news */
 .latest-news
@@ -263,6 +282,10 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  &__wrapper
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 15px
   &__top
     display: flex
     flex-direction: column
@@ -316,7 +339,7 @@
         color: #ffffff 
     .slider-item
       position: relative
-      width: 370px
+      max-width: 370px
       background: #ffffff
       height: 515px 
       margin: 10px 
@@ -373,6 +396,7 @@
     color: #ffffff
   .slick-dots li button:before
     color: #ffffff  
+/* gallery styling */
 .gallery
   &__wrapper
     max-width: 1170px
@@ -403,12 +427,6 @@
       position: relative
       width: 580px
       padding: 5px 
-      .pic1
-        width: 100%
-        height: 100%  
-        &:hover > .deg
-          display: block
-          
       .deg
         position: absolute
         left: 50%
@@ -416,18 +434,40 @@
         top: 50%
         margin-top: -35px
         display: none
+        &:hover
+          display: block
+          cursor: pointer
+      .pic1
+        width: 100%
+        height: 100%  
+        &:hover ~ .deg
+          display: block 
     .pic-block2
       display: flex
       justify-content: space-around
       flex-flow: row wrap
       width: 580px
+      .deg
+        position: absolute
+        left: 50%
+        margin-left: -35px  
+        top: 50%
+        margin-top: -35px
+        display: none
+        &:hover
+          display: block
+          cursor: pointer
       .pic-item
+        position: relative
         padding: 5px 
         width: 285px
         height: 215px
+        &:hover .deg
+          display: block
         img 
           width: 100%
           height: 100%
+        
 .gallery__bot
   button
         background: transparent 
@@ -440,6 +480,8 @@
         line-height: 22px
         text-transform: uppercase
         font-size: 14px
+        outline: none 
+        cursor: pointer
 .bottom
   background: url(../img/bg-bottom.png)
   background-position: center
@@ -462,13 +504,20 @@
         display: flex
         justify-content: center
         align-items: center
+        &:hover
+          color: #55b6fe
+          border: 1px solid #55b6fe
+          cursor: pointer
   &__get-in-touch
     max-width: 770px
     margin: 0 auto
     .form-box
       position: relative
-      background: #ffffff
+      background: url(../img/form-bg.png)
+      background-size: cover
+      background-position: center
       margin-top: -300px
+      display: none 
       form 
         display: flex
         flex-direction: column
@@ -478,6 +527,7 @@
         .top
           display: flex
           flex-direction: column
+          margin-top: 30px
           .line
             display: flex
             width: 100px
@@ -497,29 +547,73 @@
           .left
             display: flex
             flex-direction: column
+            margin-left: 40px
             .text 
               @include gotham-book
               font-size: 18px 
               line-height: 22px
               color: #2c4058
               margin-bottom: 30px
+              i 
+                margin-right: 7px
+                color: #7e5aff
           .right
             display: flex
             flex-direction: column
-            margin-left: 30px
-            .text 
-              padding-bottom: 20px
-              height: 50px
+            margin-left: 50px
+            margin-bottom: 80px
+            [type="text"]
+              @include gotham-book
+              font-size: 18px
+              line-height: 22px
+              padding-bottom: 10px
+              background: transparent
+              border: none
+              outline: none
               border-bottom: 1px solid #000000
-            
-
+            [type="email"]
+              @include gotham-book
+              font-size: 18px
+              line-height: 22px
+              padding: 30px 0 10px
+              background: transparent
+              border: none
+              outline: none
+              border-bottom: 1px solid #d5d9de
+              &:focus
+                border-bottom: 1px solid #000000
+            [type="submit"]
+              @include gotham-book
+              font-size: 14px
+              line-height: 22px
+              color: #2c4058
+              background: transparent
+              width: 140px
+              height: 50px
+              margin: 30px 0 0 170px  
+              cursor: pointer
+    button
+      background: transparent 
+      position: relative
+      border: 1px solid #ffffff  
+      width: 190px
+      height: 50px  
+      left: 50%
+      margin: 20px auto 0px -95px 
+      @include gotham-book
+      color: #ffffff
+      line-height: 22px
+      text-transform: uppercase
+      font-size: 14px
+      cursor: pointer
+      outline: none
   .bottom__bot
     display: flex
     color: #ffffff  
     padding-bottom: 215px
     justify-content: center
     margin-left: 105px
-    width: 770px  
+    max-width: 770px  
     .copyrights, .text
       @include gotham-book
       font-size: 14px
@@ -531,9 +625,8 @@
       background: #ffffff
       margin: 0 15px
 
-
-    
-
+@import _media.sass
+@import _nav-button.sass
       
 
 

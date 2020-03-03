@@ -14,16 +14,24 @@
   <title>Monticello</title>
 </head>
 <body>
-  <header class="conteiner">
+  <header id="home" class="conteiner">
     <div class="conteiner__header">
       <div class="nav-wrapper">
         <div class="header-logo"><a href="#"><img src="web/img/Logo-top.png" alt="Monticello logo"></a></div>
+        <div id="nav-icon2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       <nav class="navbar">
         <ul class="nav-list">
-          <li class="nav-item"><i class="far fa-circle"></i> About Us</li>
-          <li class="nav-item"><i class="far fa-circle"></i> projects</li>
-          <li class="nav-item"><i class="far fa-circle"></i> news</li>
-          <li class="nav-item"><i class="far fa-circle"></i> contact</li>
+          <li class="nav-item"><a href="#we-do"><i class="far fa-circle"></i> About Us</a></li>
+          <li class="nav-item"><a href="#gall"><i class="far fa-circle"></i> projects</a></li>
+          <li class="nav-item"><a href="#news"><i class="far fa-circle"></i> news</a></li>
+          <li class="nav-item"><a href="#bot-button"><i class="far fa-circle"></i> contact</a></li>
         </ul>
       </nav>
       <div class="header-socials">
@@ -34,7 +42,7 @@
       </div>
       <div class="header-slider">
         <div class="slide-one">
-          <h1 class="title">Simple & mordern</h1>
+          <h1 class="title">Simple & modern</h1>
           <p class="subtitle">We make the world's beautiful every day</p>
         </div>
         <div class="slide-two">
@@ -46,21 +54,21 @@
           <p class="subtitle">а буває зразу "Добрий вечір"</p>
         </div>
         <div class="slide-four">
-          <h1 class="title">Розводжу котів</h1>
-          <p class="subtitle">П'ятеро на  відро води</p>
+          <h1 class="title">Якби я був такий як вуйко</h1>
+          <p class="subtitle">А вуйко був такий як я</p>
         </div>
         <div class="slide-five">
-          <h1 class="title">Куплю п'єре</h1>
-          <p class="subtitle">Дорого куплю бо шию перину</p>
+          <h1 class="title">То ми б любили одну вуйну</h1>
+          <p class="subtitle">Один раз вуйко, сім раз я</p>
         </div>
       </div>
       <div class="dots-position"></div>
       <div class="button-down">
-        <i class="fas fa-chevron-down"></i>
+        <a href="#we-do"><i class="fas fa-chevron-down"></i></a>
       </div>
     </div>
   </header>
-  <section class="we-do">
+  <section id="we-do" class="we-do">
     <h2 class="we-do__title">what we do</h2>
     <div class="we-do__conteiner1">
       <div class="left-side">  
@@ -89,214 +97,216 @@
       </div>
     </div>
   </section>
-  <section class="latest-news">
-    <div class="latest-news__top">
-      <span class="line"></span>
-      <h2 class="title">latest news</h2>
-    </div>
-    <div class="slider-box">
-      <div class="slider">
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-1-pic.png" alt="skyscraper1">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">See The Unmatched Beauty Of The Great.</h4>
-          <p class="text">Free directories: directories are perfect for customers that are... searching for</p>
-          <div class="author">
-            <img src="web/img/news-author-1.jpg" alt="author1">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+  <section id="news" class="latest-news">
+    <div class="latest-news__wrapper">
+      <div class="latest-news__top">
+        <span class="line"></span>
+        <h2 class="title">latest news</h2>
+      </div>
+      <div class="slider-box">
+        <div class="slider">
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-1-pic.png" alt="skyscraper1">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">See The Unmatched Beauty Of The Great.</h4>
+            <p class="text">Free directories: directories are perfect for customers that are... searching for</p>
+            <div class="author">
+              <img src="web/img/news-author-1.jpg" alt="author1">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Effective Advertising Pointers.</h4>
-          <p class="text">Having a home based business is a wonderful asset to your life...</p>
-          <div class="author">
-            <img src="web/img/news-author-2.jpg" alt="author2">
-            <div class="name-date">
-              <p class="name">Dominic Freeman</p>
-              <p class="date">24 Apr 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Effective Advertising Pointers.</h4>
+            <p class="text">Having a home based business is a wonderful asset to your life...</p>
+            <div class="author">
+              <img src="web/img/news-author-2.jpg" alt="author2">
+              <div class="name-date">
+                <p class="name">Dominic Freeman</p>
+                <p class="date">24 Apr 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
-          <p class="text">There are many things that are important to catalog design....</p>
-          <div class="author">
-            <img src="web/img/news-author-3.jpg" alt="author3">
-            <div class="name-date">
-              <p class="name">Alice Ward</p>
-              <p class="date">30 Dec 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
+            <p class="text">There are many things that are important to catalog design....</p>
+            <div class="author">
+              <img src="web/img/news-author-3.jpg" alt="author3">
+              <div class="name-date">
+                <p class="name">Alice Ward</p>
+                <p class="date">30 Dec 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-1-pic.png" alt="skyscraper1"> 
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">See The Unmatched Beauty Of The Great.</h4>
-          <p class="text">Free directories: directories are perfect for customers that are... searching for</p>
-          <div class="author">
-            <img src="web/img/news-author-1.jpg" alt="author1">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-1-pic.png" alt="skyscraper1"> 
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">See The Unmatched Beauty Of The Great.</h4>
+            <p class="text">Free directories: directories are perfect for customers that are... searching for</p>
+            <div class="author">
+              <img src="web/img/news-author-1.jpg" alt="author1">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Effective Advertising Pointers.</h4>
-          <p class="text">Having a home based business is a wonderful asset to your life...</p>
-          <div class="author">
-            <img src="web/img/news-author-2.jpg" alt="author2">
-            <div class="name-date">
-              <p class="name">Alice Ward</p>
-              <p class="date">30 Dec 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Effective Advertising Pointers.</h4>
+            <p class="text">Having a home based business is a wonderful asset to your life...</p>
+            <div class="author">
+              <img src="web/img/news-author-2.jpg" alt="author2">
+              <div class="name-date">
+                <p class="name">Alice Ward</p>
+                <p class="date">30 Dec 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3"> 
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
-          <p class="text">There are many things that are important to catalog design....</p>
-          <div class="author">
-            <img src="web/img/news-author-3.jpg" alt="author3">
-            <div class="name-date">
-              <p class="name">Alice Ward</p>
-              <p class="date">30 Dec 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3"> 
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
+            <p class="text">There are many things that are important to catalog design....</p>
+            <div class="author">
+              <img src="web/img/news-author-3.jpg" alt="author3">
+              <div class="name-date">
+                <p class="name">Alice Ward</p>
+                <p class="date">30 Dec 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-1-pic.png" alt="skyscraper1">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">See The Unmatched Beauty Of The Great.</h4>
-          <p class="text">Free directories: directories are perfect for customers that are... searching for</p>
-          <div class="author">
-            <img src="web/img/news-author-1.jpg" alt="author1">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-1-pic.png" alt="skyscraper1">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">See The Unmatched Beauty Of The Great.</h4>
+            <p class="text">Free directories: directories are perfect for customers that are... searching for</p>
+            <div class="author">
+              <img src="web/img/news-author-1.jpg" alt="author1">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Effective Advertising Pointers.</h4>
-          <p class="text">Having a home based business is a wonderful asset to your life...</p>
-          <div class="author">
-            <img src="web/img/news-author-2.jpg" alt="author2">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Effective Advertising Pointers.</h4>
+            <p class="text">Having a home based business is a wonderful asset to your life...</p>
+            <div class="author">
+              <img src="web/img/news-author-2.jpg" alt="author2">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
-          <p class="text">There are many things that are important to catalog design....</p>
-          <div class="author">
-            <img src="web/img/news-author-3.jpg" alt="author3">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
+            <p class="text">There are many things that are important to catalog design....</p>
+            <div class="author">
+              <img src="web/img/news-author-3.jpg" alt="author3">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
-          <p class="text">There are many things that are important to catalog design....</p>
-          <div class="author">
-            <img src="web/img/news-author-3.jpg" alt="author3">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
+            <p class="text">There are many things that are important to catalog design....</p>
+            <div class="author">
+              <img src="web/img/news-author-3.jpg" alt="author3">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
-          <p class="text">There are many things that are important to catalog design....</p>
-          <div class="author">
-            <img src="web/img/news-author-3.jpg" alt="author3">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
+            <p class="text">There are many things that are important to catalog design....</p>
+            <div class="author">
+              <img src="web/img/news-author-3.jpg" alt="author3">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
-          <p class="text">There are many things that are important to catalog design....</p>
-          <div class="author">
-            <img src="web/img/news-author-3.jpg" alt="author3">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-3-pic.png" alt="skyscraper3">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Hypnotize Yourself Into The Ghost.</h4>
+            <p class="text">There are many things that are important to catalog design....</p>
+            <div class="author">
+              <img src="web/img/news-author-3.jpg" alt="author3">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Effective Advertising Pointers.</h4>
-          <p class="text">Having a home based business is a wonderful asset to your life...</p>
-          <div class="author">
-            <img src="web/img/news-author-2.jpg" alt="author2">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Effective Advertising Pointers.</h4>
+            <p class="text">Having a home based business is a wonderful asset to your life...</p>
+            <div class="author">
+              <img src="web/img/news-author-2.jpg" alt="author2">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Effective Advertising Pointers.</h4>
-          <p class="text">Having a home based business is a wonderful asset to your life...</p>
-          <div class="author">
-            <img src="web/img/news-author-2.jpg" alt="author2">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Effective Advertising Pointers.</h4>
+            <p class="text">Having a home based business is a wonderful asset to your life...</p>
+            <div class="author">
+              <img src="web/img/news-author-2.jpg" alt="author2">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="slider-item">
-          <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
-          <img class="hover" src="web/img/hover-news.png" alt="pluse">
-          <h4 class="item-title">Effective Advertising Pointers.</h4>
-          <p class="text">Having a home based business is a wonderful asset to your life...</p>
-          <div class="author">
-            <img src="web/img/news-author-2.jpg" alt="author2">
-            <div class="name-date">
-              <p class="name">Isaac Dunn</p>
-              <p class="date">09 Feb 2017</p>
+          <div class="slider-item">
+            <img class="first-img" src="web/img/news-2-pic.png" alt="skyscraper2">
+            <img class="hover" src="web/img/hover-news.png" alt="pluse">
+            <h4 class="item-title">Effective Advertising Pointers.</h4>
+            <p class="text">Having a home based business is a wonderful asset to your life...</p>
+            <div class="author">
+              <img src="web/img/news-author-2.jpg" alt="author2">
+              <div class="name-date">
+                <p class="name">Isaac Dunn</p>
+                <p class="date">09 Feb 2017</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>   
-        <div class="prev"><i class="fas fa-chevron-left"></i></div>
-        <div class="next"><i class="fas fa-chevron-right"></i></div>
+        </div>   
+          <div class="prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="next"><i class="fas fa-chevron-right"></i></div>
+      </div>
     </div>
   </section>
-  <section class="gallery">
+  <section id="gall" class="gallery">
     <div class="gallery__wrapper">
       <div class="gallery__top">
         <span class="line"></span>
@@ -308,10 +318,18 @@
           <div class="deg"><img src="web/img/360deg.png" alt="360deg"></div>
         </div>
         <div class="pic-block2">
-          <div class="pic-item"><img src="web/img/gallery-2.jpg" alt="skyscraper2"></div>
-          <div class="pic-item"><img src="web/img/gallery-3.jpg" alt="skyscraper3"></div>
-          <div class="pic-item"><img src="web/img/gallery-4.jpg" alt="skyscraper4"></div>
-          <div class="pic-item"><img src="web/img/gallery-5.png" alt="skyscraper5"></div>
+          <div class="pic-item"><img src="web/img/gallery-2.jpg" alt="skyscraper2">
+            <div class="deg"><img src="web/img/360deg.png" alt="360deg"></div>
+          </div>
+          <div class="pic-item"><img src="web/img/gallery-3.jpg" alt="skyscraper3">
+            <div class="deg"><img src="web/img/360deg.png" alt="360deg"></div>
+          </div>
+          <div class="pic-item"><img src="web/img/gallery-4.jpg" alt="skyscraper4">
+            <div class="deg"><img src="web/img/360deg.png" alt="360deg"></div>
+          </div>
+          <div class="pic-item"><img src="web/img/gallery-5.png" alt="skyscraper5">
+            <div class="deg"><img src="web/img/360deg.png" alt="360deg"></div>
+          </div>
         </div>
       </div>
       <div class="gallery__bot">
@@ -320,7 +338,7 @@
     </div>
   </section>
   <section id="map" class="our-map"></section>
-  <footer class="bottom">
+  <footer id="bot" class="bottom">
     <div class="bottom__get-in-touch">
       <div class="form-box">
         <form method="post">
@@ -336,17 +354,17 @@
               <p class="text"><i class="far fa-clock"></i>  From 07:05AM to 19:30PM</p>
             </div>
             <div class="right">
-              <input type="text" value="Mollie Medina" name="name" id="">
-              <input type="email" placeholder="Email" name="mail" id="">
-              <input type="submit" value="SUBMIT">
+              <input type="text" value="Mollie Medina" required name="name">
+              <input type="email" placeholder="Email" required name="mail">
+              <input id="form-submit" type="submit" value="SUBMIT">
             </div>
           </div>
         </form>
       </div>
-      <button>Get In Touch</button>
+      <button id="bot-button">Get In Touch</button>
     </div>
     <div class="bottom__logo-line">
-      <div class="logo"><img src="web/img/Logo-top.png" alt="Monticello-logo"></div>
+      <div class="logo"><a href="#home"><img src="web/img/Logo-top.png" alt="Monticello-logo"></a></div>
       <div class="socials">
         <div class="social-icon fb"><i class="fab fa-facebook"></i></div>
         <div class="social-icon"><i class="fab fa-twitter"></i></div>
